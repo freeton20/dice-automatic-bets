@@ -1,0 +1,279 @@
+{
+  "type": "Contract",
+  "value": {
+    "ABI version": 2,
+    "header": [
+      "time"
+    ],
+    "functions": [
+      {
+        "name": "constructor",
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "getVersion",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "version",
+            "type": "uint32"
+          }
+        ]
+      },
+      {
+        "name": "getMinBetValue",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "minBetValue",
+            "type": "uint128"
+          }
+        ]
+      },
+      {
+        "name": "getMaxBetValue",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "maxBetValue",
+            "type": "uint128"
+          }
+        ]
+      },
+      {
+        "name": "getMinBetNumber",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "minBetNumber",
+            "type": "uint8"
+          }
+        ]
+      },
+      {
+        "name": "getMaxBetNumber",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "maxBetNumber",
+            "type": "uint8"
+          }
+        ]
+      },
+      {
+        "name": "getReturnToPlayer",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "returnToPlayer",
+            "type": "uint32"
+          }
+        ]
+      },
+      {
+        "name": "setMinBetValue",
+        "inputs": [
+          {
+            "name": "value",
+            "type": "uint128"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "previous",
+            "type": "uint128"
+          },
+          {
+            "name": "current",
+            "type": "uint128"
+          }
+        ]
+      },
+      {
+        "name": "setMaxBetValue",
+        "inputs": [
+          {
+            "name": "value",
+            "type": "uint128"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "previous",
+            "type": "uint128"
+          },
+          {
+            "name": "current",
+            "type": "uint128"
+          }
+        ]
+      },
+      {
+        "name": "setMinBetNumber",
+        "inputs": [
+          {
+            "name": "value",
+            "type": "uint8"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "previous",
+            "type": "uint8"
+          },
+          {
+            "name": "current",
+            "type": "uint8"
+          }
+        ]
+      },
+      {
+        "name": "setMaxBetNumber",
+        "inputs": [
+          {
+            "name": "value",
+            "type": "uint8"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "previous",
+            "type": "uint8"
+          },
+          {
+            "name": "current",
+            "type": "uint8"
+          }
+        ]
+      },
+      {
+        "name": "setReturnToPlayer",
+        "inputs": [
+          {
+            "name": "value",
+            "type": "uint32"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "previous",
+            "type": "uint32"
+          },
+          {
+            "name": "current",
+            "type": "uint32"
+          }
+        ]
+      },
+      {
+        "name": "sendTransaction",
+        "inputs": [
+          {
+            "name": "destination",
+            "type": "address"
+          },
+          {
+            "name": "value",
+            "type": "uint128"
+          },
+          {
+            "name": "bounce",
+            "type": "bool"
+          },
+          {
+            "name": "flag",
+            "type": "uint8"
+          }
+        ],
+        "outputs": []
+      },
+      {
+        "name": "setCode",
+        "inputs": [
+          {
+            "name": "newCode",
+            "type": "cell"
+          }
+        ],
+        "outputs": []
+      },
+      {
+        "name": "bet",
+        "inputs": [
+          {
+            "name": "number",
+            "type": "uint8"
+          },
+          {
+            "name": "referralId",
+            "type": "uint256"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "timestamp",
+            "type": "uint64"
+          },
+          {
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "name": "betValue",
+            "type": "uint128"
+          },
+          {
+            "name": "betNumber",
+            "type": "uint8"
+          },
+          {
+            "name": "resultValue",
+            "type": "uint128"
+          },
+          {
+            "name": "resultNumber",
+            "type": "uint8"
+          }
+        ]
+      }
+    ],
+    "data": [],
+    "events": [
+      {
+        "name": "BetEvent",
+        "inputs": [
+          {
+            "name": "timestamp",
+            "type": "uint64"
+          },
+          {
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "name": "betValue",
+            "type": "uint128"
+          },
+          {
+            "name": "betNumber",
+            "type": "uint8"
+          },
+          {
+            "name": "resultValue",
+            "type": "uint128"
+          },
+          {
+            "name": "resultNumber",
+            "type": "uint8"
+          },
+          {
+            "name": "referralId",
+            "type": "uint256"
+          }
+        ],
+        "outputs": []
+      }
+    ]
+  }
+}
